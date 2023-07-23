@@ -1,0 +1,117 @@
+.bookstore-page {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .main-book-info {
+    margin-right: 60px;
+    width: 60%; /* Adjusted width for the main book panel */
+  }
+  
+  .book-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+  
+  .book-cover {
+    width: 500px; /* Adjusted the width of the main book image */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .book-title {
+    font-size: 32px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star {
+    font-size: 16px;
+    color: #FFD700;
+  }
+  
+  .price {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 10px;
+  }
+  
+  .read-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .read-button:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  
+  .recommended-books h2 {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 13px;
+  }
+  
+  .bookshelf {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 15px;
+    width: 60%;
+  }
+  
+  .book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  .recommended-book-cover {
+    border-radius: 10px;
+    object-fit: cover;
+    max-height: 200px;
+    height: auto;
+  }
+  
+  .book-link {
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+  }
+
+  
+  .description {
+    word-break: break-all;
+    max-width: 320px;
+  }

@@ -1,0 +1,130 @@
+h1 {
+    font-size: 24px;
+    color: #333333;
+    margin: 0 0 20px 0;
+}
+
+.recent-book {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.bookshelf {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* distributes space between elements */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    box-sizing: border-box;
+    height: 100%; /* takes up full height of its container */
+}
+
+.book-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.book-details h2, .book-details h3 {
+    font-size: 18px;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.book-details p {
+    font-size: 14px;
+    color: #666666;
+    margin: 0;
+}
+
+.book-progress {
+    background-color: lightgray; 
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 100%;
+    height: 10px;
+    align-self: flex-end;
+}
+
+.progress-bar {
+    background-color: green; 
+    border-radius: 20px; 
+    height: 100%;
+}
+
+.book-item img {
+    max-height: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.book-details h2 {
+    font-size: 16px;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 5px;
+    overflow: hidden; /* prevent text from overflowing */
+    text-overflow: ellipsis; /* apply ellipsis (...) when text overflows */
+    white-space: normal; /* prevent text from wrapping to the next line */
+    max-width: 90%; /* set your preferred max-width */
+}
+.book-link {
+    text-decoration: none; /* remove underline normally added to links */
+    color: inherit; /* make the link color the same as surrounding text */
+    display: contents; /* makes the link behave as if it's not there */
+}
+/* Your existing CSS remains unchanged */
+
+/* Add styles for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+.search-bar input {
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 50%;
+}
+
+.search-bar button {
+    padding: 7px 20px;
+    border: none;
+    background-color: #484349;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Styles for star rating */
+.star-rating {
+    color: #FFD700; /* Set the color for the stars, here using golden color */
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.star {
+    display: inline-block;
+}
